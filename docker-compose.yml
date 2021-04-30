@@ -1,15 +1,10 @@
 version: "3"
-services: 
-    database:
-        container_name: pg_db
-        image: postgres
-        environment: 
-            - POSTGRES_DB=trabalho_bd_sql
-            - POSTGRES_USER=trabalho_bd
-            - POSTGRES_PASSWORD=123456
-        ports: 
-            - "6060:5432"
-        volumes:
-            - /scripts:/scripts
-            - /sql:/sql
-           
+services:
+  database:
+    build: .
+    environment:
+      - POSTGRES_DB=trabalho_bd_sql
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "6060:5432"
