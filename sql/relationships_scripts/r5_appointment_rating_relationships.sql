@@ -1,1 +1,0 @@
-alter table avaliacao  add constraint fk_agendamento foreign key(id_agendamento) references agendamento(id);

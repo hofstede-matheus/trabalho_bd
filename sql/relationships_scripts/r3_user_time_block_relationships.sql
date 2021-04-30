@@ -1,1 +1,0 @@
-alter table bloco_tempo add constraint fk_mentor foreign key(id_mentor) references usuarios(id);
