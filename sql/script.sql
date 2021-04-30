@@ -6,7 +6,7 @@ create extension if not exists "uuid-ossp";
 create type tipo_perfil as enum ('MENTOR', 'MENTORADO'); 
 
 -- tables
-create table if not exists Usuarios (
+create table if not exists usuarios (
 	id varchar primary key default uuid_generate_v4(),
 	tipo tipo_perfil,
 	email varchar not null,
@@ -15,7 +15,7 @@ create table if not exists Usuarios (
 	nascimento timestamp not null
 );
 create table if not exists perfis (
-	id varchar default primary key uuid_generate_v4(),
+	id varchar primary key default uuid_generate_v4(),
 	id_usuario varchar not null
 );
 create table if not exists habilidades (
