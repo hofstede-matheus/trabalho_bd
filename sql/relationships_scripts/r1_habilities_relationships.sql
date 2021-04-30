@@ -1,1 +1,0 @@
-alter table habilidades add constraint fk_perfis foreign key(id_perfil) references perfis(id);
