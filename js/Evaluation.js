@@ -17,7 +17,7 @@ class Evaluation {
     }
 
     generateInserts() {
-        let stmt = 'INSERT INTO avaliacao (id, id_agendamento, avaliacao) VALUES '
+        let stmt = 'INSERT INTO avaliacao (id, id_agendamento, numero_estrelas) VALUES '
         for(let i = 0; i < this.#id.length ; i++) {
             stmt+=`('${this.#id[i]}', '${this.#id_agendamento[i]}', ${this.#generateEvaluation()})`
             if(i=== this.#id.length-1) 

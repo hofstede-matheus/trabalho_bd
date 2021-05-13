@@ -1,2 +1,2 @@
-NODE_MODULES
-error.txt
+**/node_modules
+**error.txt
