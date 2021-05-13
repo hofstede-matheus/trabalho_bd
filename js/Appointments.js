@@ -49,6 +49,10 @@ class Appointments {
         return stmt;
     }
 
+    generateSelects() {
+        let stmt = "Select * from " 
+    }
+
     get ids() {
         return this.#ids;
     }
